@@ -1,0 +1,24 @@
+mysql> select cust1.cust_name,orders1.oid
+    -> from cust1
+    -> inner join orders1
+    -> on
+    -> orders1.cust_id = cust1.id;
+
+
+mysql> select cust1.cust_name,orders1.oid
+    -> from cust1
+    -> left join orders1
+    -> on
+    -> orders1.cust_id = cust1.id;
+
+mysql> select cust1.cust_name,orders1.oid
+    -> from cust1
+    -> right join orders1
+    -> on
+    -> orders1.cust_id = cust1.id;
+
+mysql> select cust1.cust_name,orders1.oid
+    -> from cust1
+    -> full outer join orders1
+    -> on
+    -> orders1.cust_id = cust1.id;
